@@ -8,8 +8,15 @@
 </head>
 <body>
   <div class="chat-container">
-    <div class="chat-header">🤖 AI Chatbot</div>
+    <div class="chat-header">
+      🤖 AI Chatbot
+      <div class="chat-controls">
+        <button onclick="toggleTheme()">🌓</button>
+        <button onclick="clearChat()">🗑️</button>
+      </div>
+    </div>
     <div class="chat-box" id="chatBox"></div>
+    <div id="typingIndicator" class="typing-indicator">Bot is typing...</div>
     <div class="input-area">
       <input type="text" id="userInput" placeholder="Type your message..." />
       <button onclick="sendMessage()">Send</button>
